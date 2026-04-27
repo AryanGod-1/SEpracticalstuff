@@ -1,0 +1,1 @@
+- Most diagrams are less than perfect.
