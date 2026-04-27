@@ -1,0 +1,376 @@
+
+jus understand the following : 
+Question
+You are given a module User Login System with username and password authentication using database validation
+
+List
+1 Unit Testing scenarios
+2 Integration Testing scenarios
+
+
+Answer
+
+Unit Testing
+Focus on testing individual components
+
+Validate username input such as null empty and invalid characters
+Validate password rules like length and complexity
+Check password hashing function
+Verify login works with correct credentials using mock database
+Verify login fails with wrong password
+Handle exceptions such as null input
+Test boundary cases for password length
+
+Unit Testing means testing one function or component in isolation
+
+
+Integration Testing
+Focus on interaction between components
+
+Check login system connects to database correctly
+Test correct credentials flow from system to database and back
+Test incorrect credentials and error handling
+Handle database connection failures
+Test complete login flow from UI to backend to database
+Verify session or token generation after login
+Ensure data consistency between services
+
+Integration Testing means testing how components work together
+
+
+Simple understanding
+Unit Testing checks if a single part works
+Integration Testing checks if all parts work together
+-----------------
+
+Got it — you want **exam-style questions + long structured answers (like your example)** for multiple systems. I’ll keep the same format and clarity.
+
+---
+
+# 🚆 1. Railway Reservation System
+
+### **Question**
+
+You are given a module Railway Reservation System with ticket booking, cancellation, and seat availability using database validation
+
+List
+1 Unit Testing scenarios
+2 Integration Testing scenarios
+
+---
+
+### **Answer**
+
+## **Unit Testing**
+
+Focus on testing individual components
+
+Validate train search input such as source, destination, and date
+Check seat availability function for correct count
+Validate passenger details input such as name, age, and ID
+Verify fare calculation logic based on class and distance
+Test ticket booking function with mock database
+Verify cancellation logic updates seat count correctly
+Check PNR generation function
+Handle invalid inputs such as past dates or empty fields
+Test boundary cases for seat limits
+
+Unit Testing means testing one function or component in isolation
+
+---
+
+## **Integration Testing**
+
+Focus on interaction between components
+
+Check connection between booking system and database
+Test full booking flow from search to payment to confirmation
+Verify seat availability updates after booking
+Test cancellation flow and refund processing
+Handle payment gateway failures
+Ensure PNR retrieval works across modules
+Verify notification system (SMS/email) after booking
+Check data consistency between booking and user account
+
+Integration Testing means testing how components work together
+
+---
+
+## **Simple understanding**
+
+Unit Testing checks if a single part works
+Integration Testing checks if all parts work together
+
+---
+
+# 🍔 2. Food Ordering System
+
+### **Question**
+
+You are given a module Food Ordering System with menu selection, cart, and payment processing
+
+List
+1 Unit Testing scenarios
+2 Integration Testing scenarios
+
+---
+
+### **Answer**
+
+## **Unit Testing**
+
+Focus on testing individual components
+
+Validate menu item display and details
+Test add-to-cart functionality
+Verify quantity update logic
+Check price calculation for items
+Test discount or coupon logic
+Validate user input such as address and contact
+Check payment calculation logic
+Handle invalid inputs such as zero quantity
+Test removal of items from cart
+
+Unit Testing means testing one function or component in isolation
+
+---
+
+## **Integration Testing**
+
+Focus on interaction between components
+
+Test full order flow from menu to cart to payment
+Verify cart updates reflect in total price
+Check integration with payment gateway
+Handle failed transactions and retries
+Test order placement and confirmation system
+Verify restaurant receives correct order details
+Check delivery tracking system
+Ensure data consistency between user, cart, and orders
+
+Integration Testing means testing how components work together
+
+---
+
+## **Simple understanding**
+
+Unit Testing checks if a single part works
+Integration Testing checks if all parts work together
+
+---
+
+# 🏥 3. Hospital Management System
+
+### **Question**
+
+You are given a module Hospital Management System with patient registration, appointment booking, and billing
+
+List
+1 Unit Testing scenarios
+2 Integration Testing scenarios
+
+---
+
+### **Answer**
+
+## **Unit Testing**
+
+Focus on testing individual components
+
+Validate patient registration input fields
+Test doctor availability checking logic
+Verify appointment booking function
+Check billing calculation logic
+Test prescription entry module
+Validate patient ID generation
+Handle invalid or missing patient data
+Test date and time slot validation
+Check discharge summary generation
+
+Unit Testing means testing one function or component in isolation
+
+---
+
+## **Integration Testing**
+
+Focus on interaction between components
+
+Test appointment flow between patient and doctor modules
+Verify billing reflects services used
+Check integration between lab reports and patient records
+Handle database failures during booking
+Test notification system for appointments
+Ensure data consistency across departments
+Verify insurance claim processing
+Test end-to-end patient lifecycle from registration to discharge
+
+Integration Testing means testing how components work together
+
+---
+
+## **Simple understanding**
+
+Unit Testing checks if a single part works
+Integration Testing checks if all parts work together
+
+---
+
+# 🎓 4. Student Teacher Portal
+
+### **Question**
+
+You are given a module Student Teacher Portal with login, assignment submission, and grading system
+
+List
+1 Unit Testing scenarios
+2 Integration Testing scenarios
+
+---
+
+### **Answer**
+
+## **Unit Testing**
+
+Focus on testing individual components
+
+Validate student and teacher login inputs
+Test assignment upload functionality
+Verify file format validation
+Check grading calculation logic
+Test attendance marking system
+Validate input fields such as marks and comments
+Handle invalid submissions
+Test notification trigger logic
+Check role-based access control
+
+Unit Testing means testing one function or component in isolation
+
+---
+
+## **Integration Testing**
+
+Focus on interaction between components
+
+Test assignment submission flow from student to teacher
+Verify grading updates reflect in student dashboard
+Check notification system for assignment deadlines
+Test integration between attendance and reports
+Handle database connection failures
+Ensure role-based access works across modules
+Verify report generation system
+Test complete workflow from login to grading
+
+Integration Testing means testing how components work together
+
+---
+
+## **Simple understanding**
+
+Unit Testing checks if a single part works
+Integration Testing checks if all parts work together
+
+---
+
+# 🏦 5. Banking Management System
+
+### **Question**
+
+You are given a module Banking Management System with account handling, transactions, and fund transfer
+
+List
+1 Unit Testing scenarios
+2 Integration Testing scenarios
+
+---
+
+### **Answer**
+
+## **Unit Testing**
+
+Focus on testing individual components
+
+Validate account creation input fields
+Test balance calculation logic
+Verify deposit and withdrawal functions
+Check fund transfer validation logic
+Test interest calculation
+Handle invalid account numbers
+Test transaction history retrieval
+Check password or PIN validation
+Test boundary cases such as minimum balance
+
+Unit Testing means testing one function or component in isolation
+
+---
+
+## **Integration Testing**
+
+Focus on interaction between components
+
+Test fund transfer between accounts
+Verify transaction updates reflect in both accounts
+Check integration with payment gateways
+Handle transaction failures and rollbacks
+Test authentication with banking server
+Ensure data consistency across services
+Verify notification system for transactions
+Test end-to-end banking operations
+
+Integration Testing means testing how components work together
+
+---
+
+## **Simple understanding**
+
+Unit Testing checks if a single part works
+Integration Testing checks if all parts work together
+
+---
+
+# 🛒 6. E-commerce Website
+
+### **Question**
+
+You are given a module E-commerce Website with product browsing, cart, and order processing
+
+List
+1 Unit Testing scenarios
+2 Integration Testing scenarios
+
+---
+
+### **Answer**
+
+## **Unit Testing**
+
+Focus on testing individual components
+
+Validate product search functionality
+Test add-to-cart feature
+Verify product price calculation
+Check discount and coupon logic
+Test inventory update logic
+Validate user input such as address
+Handle invalid product IDs
+Test order creation function
+Check tax calculation
+
+Unit Testing means testing one function or component in isolation
+
+---
+
+## **Integration Testing**
+
+Focus on interaction between components
+
+Test full order flow from browsing to checkout
+Verify inventory updates after purchase
+Check payment gateway integration
+Handle failed payments and retries
+Test order tracking system
+Verify shipping service integration
+Ensure data consistency across cart and orders
+Test notification system for order confirmation
+
+Integration Testing means testing how components work together
+
